@@ -1,7 +1,12 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { DashboardPage } from './dashboard';
 
-const routes = [ ];
+const routes = [{
+    path: '/',
+    exact: true,
+    Component: DashboardPage,
+}];
 
 export const Routes = () => (
     <Router>
